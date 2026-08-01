@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+:root{
+    --font-size-l: ;
+    --font-size-m: ;
+    --font-size-s: ;
+
+    --space-xl: ;
+    --space-l: ;
+    --space-m: ;
+    --space-s: ;
+
+    --color-primary: #444;
+    --color-secondary: #6791C8;
+    --color-bright: #F2D7A5;
+    --color-dark: #332916;
+
+    --bg-color-primary: #F2D7A5;
+    --bg-color-secondary: #725115;
+
+    /* @media (min-width: 768px) { */
+        --font-size-l: ;
+        --font-size-m: ;
+        --font-size-s: ;
+
+        --space-xl: ;
+        --space-l: ;
+        --space-m: ;
+        --space-s: ;
+    /* } */
+}
+
+*{
+    font-family:"Hiragino Sans", "Yu Gothic", "Meiryo", sans-serif;
+    color: var(--color-primary);
+}
+
+.header{
+
+}
+
+.header-logo{
+    position: fixed;
+    height: 70px;
+    width: 70px;
+}
+
+.logo{
+    
+}
+
+.logo__link{
+    
+}
+
+.logo__img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    opacity: 0.9;
+}
+
+.logo__title{
+    font-family: "PT Sans Narrow", sans-serif;
+    font-size: 20px;
+    padding: 2px 5px;
+    color: var(--color-dark);
+}
+
+.logo__title--top{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.logo__title--bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.header-nav{
+
+}
+
+.header-nav__list{
+
+}
+
+.header-nav__item{
+
+}
+
+.header-nav__link{
+
+}
