@@ -12,7 +12,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=PT+Sans+Narrow:wght@700&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -66,131 +66,183 @@
         </div>
         
         <div class="container">
-            <section class="about">
-                <h2 class="about__headline">ABOUT</h2>
-                <p class="about__disc">
-                    texttexttexttexttexttexttexttexttexttexttexttexttexttext
-                </p>
-                <p class="about__disc">
-                    texttexttexttexttexttexttexttexttexttexttexttexttexttext
-                    <br>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
-                </p>
-            </section>
-
-            <section class="menu">
-                <h2 class="menu__headline">MENU</h2>
-
-                <div class="menu-list__container">
-                    <h3 class="menu-list__title">DRINK</h3>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                COFFEE    
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="menu-list__container">
-                    <h3 class="menu-list__title">FOOD</h3>
-                    <ul class="menu__list">
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                        <li class="menu__item">
-                            <h4 class="menu-item__title">
-                                FOOD
-                            </h4>
-                            <p class="menu-item__price">¥600</p>
-                        </li>
-                    </ul>
+            <section class="about section">
+                <h2 class="about__headline headline">ABOUT</h2>
+                <div class="about-desc__wrapper">
+                    <p class="about__disc">
+                        texttexttexttexttexttexttexttexttexttexttexttexttexttext
+                    </p>
+                    <p class="about__disc">
+                        texttexttexttexttexttexttexttexttexttexttexttexttexttext
+                        <br>texttexttexttexttexttexttexttexttexttexttexttexttexttexttexttext
+                    </p>
                 </div>
             </section>
 
-            <section class="news">
-                <h2 class="news__headline">NEWS</h2>
+            <section class="menu section">
+                <h2 class="menu__headline headline">MENU</h2>
+
+
+                    <div class="menu-tab__group">
+                        <h3 id="menu-tab" class="menu-tab__title active">DRINK</h3>
+                        <h3 class="menu-tab__title">FOOD</h3>
+                    </div>
+
+                    <div class="menu__content">
+                        <ul id="drink-list" class="menu__list active">
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        COFFEE    
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                        </ul>
+                        
+                        <ul id="food-list" class="menu__list" style="display: none;">
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                            <li class="menu__item">
+                                <img src="https://dummyimage.com/600x400/000/fff" alt="menu-item__photo" class="menu-item__img">
+                                <div class="menu-item__text">
+                                    <h4 class="menu-item__name">
+                                        FOOD
+                                    </h4>
+                                    <p class="menu-item__price">¥600</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+            </section>
+
+            <section class="news section">
+                <h2 class="news__headline headline">NEWS</h2>
                 
                 <div class="news__contents">
                     <a href="" class="news-contents__link">
@@ -236,8 +288,8 @@
                 </div>
             </section>
             
-            <section class="access">
-                <h2 class="access__headline">ACCESS</h2>
+            <section class="access section">
+                <h2 class="access__headline headline">ACCESS</h2>
                 <iframe class="access__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1457.3527618114888!2d141.3483734983948!3d43.0686606!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5f0b2974d2c3f903%3A0xa5e2b18cdd4a47a5!2z5pyt5bmM6aeF!5e0!3m2!1sja!2sjp!4v1785515594687!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 <h3 class="access__addess"></h3>
             </section>
